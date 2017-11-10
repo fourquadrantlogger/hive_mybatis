@@ -25,7 +25,7 @@ import javax.sql.DataSource;
 @ConfigurationProperties(prefix = "datasource.hivelive")
 @MapperScan(basePackages = HiveDBConfig.PACKAGE, sqlSessionFactoryRef = "hiveLiveSqlSessionFactory")
 public class HiveDBConfig {
-    static final String PACKAGE = "com.ksyun.tiantian.dao.hive";
+    static final String PACKAGE = "dao";
 
     @Bean(name = "hiveLiveDataSource")
     public DataSource rdsDataSource() {
