@@ -30,7 +30,7 @@ public class HiveDBConfig {
     @Bean(name = "hiveLiveDataSource")
     public DataSource rdsDataSource() {
         System.out.println("---------------------- DashBoardDBConfig ------------------------");
-        DataSource ds = new HiveDataSource("jdbc:hive2://10.69.41.195:10000/default", "root", "default");
+        DataSource ds = new HiveDataSource("jdbc:hive2://1.2.3.4:10000/default", "root", "default");
         return ds;
 
     }
